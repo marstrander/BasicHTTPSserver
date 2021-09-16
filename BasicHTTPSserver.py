@@ -14,6 +14,6 @@ handler.socket = ssl.wrap_socket (handler.socket,
 
 with handler as httpd:
     print('\n' + '-' * 80 + '\n')
-    print('Server running on https://{0}{1}\n'.format(sys.argv[1], sys.argv[2]))
+    print('Server running on https://{0}:{1}\n'.format(sys.argv[1], sys.argv[2]))
     print('-' * 80 + '\n')
     httpd.serve_forever()
